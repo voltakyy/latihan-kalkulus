@@ -10,11 +10,27 @@ Latihan soal pilihan ganda untuk UTS Kalkulus Reguler: **Bilangan & Modulo**, **
 - Bisa dijawab dengan klik, tombol **1–4 / A–D**, lalu **Enter** untuk lanjut
 - Rapor per topik, review jawaban salah, dan rekor tersimpan di browser
 
-## Buka latihan
+## Buka latihan dan modul
 
 Langsung buka [`index.html`](index.html) di browser — tidak perlu install, build, atau server.
 
 Lewat GitHub Pages: **https://voltakyy.github.io/latihan-kalkulus/**
+
+## Modul bacaan
+
+Selain latihan, ada empat halaman materi dan satu arsip UTS. Mulai dari indeks [`modul.html`](modul.html).
+
+| Halaman | Isi |
+| --- | --- |
+| [`materi-1.html`](materi-1.html) | Bilangan vs angka, himpunan N–Z–Q–R–C, representasi, operasi dan akar |
+| [`materi-2.html`](materi-2.html) | Enam rasio trigonometri, radian, unit circle, nilai istimewa, identitas |
+| [`materi-3.html`](materi-3.html) | Domain–kodomain–range, fungsi injektif/surjektif/bijektif, invers, komposisi, floor, modulo, log, rekursi |
+| [`materi-4.html`](materi-4.html) | Limit kiri–kanan, bentuk `0/0`, limit trigonometri, tak hingga, asimtot, kontinuitas |
+| [`uts-2025.html`](uts-2025.html) | Arsip UTS Gasal 2025/2026, kunci ringkas, pembahasan lengkap, timer simulasi 90 menit |
+
+Setiap halaman materi punya daftar isi yang mengikuti posisi bacaan, contoh langkah demi langkah, latihan dengan pembahasan yang bisa dibuka-tutup, diagram SVG, dan tautan PDF sumber di bagian bawah. Gaya visual memakai [`styles.css`](styles.css) yang sama, dengan lapisan tambahan [`modul.css`](modul.css) dan interaksi di [`modul.js`](modul.js). Latihan 35 soal di beranda tetap berjalan lewat [`app.js`](app.js).
+
+PDF sumber disalin ke [`assets/pdf/`](assets/pdf/) agar halaman modul tetap bisa membuka materi asli. File PDF bersifat gambar, jadi isi modul ditulis ulang dari halaman yang sudah dirender, bukan diekstrak otomatis.
 
 ## Catatan soal
 
