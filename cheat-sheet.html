@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat Sheet A5 — UTS Kalkulus | Batas &amp; Bentuk</title>
+<meta name="description" content="Cheat sheet A5 satu muka untuk UTS Kalkulus: pertidaksamaan, fungsi kuadrat, limit aljabar, limit trigonometri, plus amunisi bilangan, fungsi, dan trigonometri.">
+<meta name="theme-color" content="#f3efe3">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="cheat-sheet.css">
+</head>
+<body class="cheat-page">
+<main class="cheat-shell">
+
+  <header class="cheat-toolbar no-print">
+    <a class="brand" href="modul.html" aria-label="Kembali ke modul">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40">
+          <rect width="40" height="40" rx="8" fill="#fffdf6"/>
+          <path d="M7 20h26M20 33V7" stroke="#1c2a2e" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M11 9l6 16 6-16" fill="none" stroke="#24549b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="25" r="2.2" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
+        </svg>
+      </span>
+      <span class="brand-word">batas<span>.</span></span>
+    </a>
+    <div class="cheat-toolbar-actions">
+      <span class="cheat-toolbar-note">A5 · satu muka · hitam-putih aman</span>
+      <button class="btn btn-primary btn-small" type="button" id="printCheat">Cetak A5</button>
+    </div>
+  </header>
+
+  <section class="cheat-intro no-print" aria-labelledby="cheatTitle">
+    <p class="section-kicker">lembar izin · maksimal A5</p>
+    <h1 id="cheatTitle">Satu muka, empat tipe soal.</h1>
+    <p>Ini bukan rangkuman seluruh modul—ini lembar kerja untuk UTS. Isinya diurutkan dari yang paling sering keluar: pertidaksamaan, fungsi kuadrat, limit aljabar, dan limit trigonometri. Sisanya amunisi dasar yang menempel di keempat tipe itu.</p>
+    <div class="cheat-print-steps">
+      <span><b>1</b> Ctrl/Cmd + P</span>
+      <span><b>2</b> Kertas A5, portrait</span>
+      <span><b>3</b> Skala 100%, margin None</span>
+      <span><b>4</b> Headers/footers: off</span>
+      <span><b>5</b> Satu muka saja</span>
+    </div>
+  </section>
+
+  <article class="a5-sheet" id="cheatSheet" aria-label="Cheat sheet A5 satu muka">
+    <header class="cs-head">
+      <div>
+        <p class="cs-kicker">UTS KALKULUS · LEMBAR IZIN</p>
+        <p class="cs-title">Batas &amp; Bentuk</p>
+        <p class="cs-sub">empat tipe soal, satu halaman</p>
+      </div>
+      <div class="cs-meta">
+        <b>A5 · SATU MUKA</b><br>
+        Gasal 2025/2026<br>
+        <span>nama / NIM: ____________</span>
+      </div>
+    </header>
+
+    <div class="cs-map" aria-label="Peta empat soal UTS">
+      <div><b>01</b> Pertidaksamaan <span>25</span></div>
+      <div><b>02</b> Fungsi kuadrat <span>25</span></div>
+      <div><b>03</b> Limit aljabar <span>25</span></div>
+      <div><b>04</b> Limit trigonometri <span>25</span></div>
+    </div>
+
+    <div class="cs-cols">
+      <div class="cs-col">
+
+        <section class="cs-block cs-block--cobalt">
+          <h2><span>01</span> Pertidaksamaan</h2>
+          <p><b>Linear:</b> kerjakan kedua ruas. ×/÷ bilangan <b>negatif</b> ⇒ arah tanda <b>dibalik</b>.</p>
+          <p class="cs-formula">−5 ≤ 2x+6 &lt; 4 ⇒ −11/2 ≤ x &lt; −1</p>
+          <p><b>Interval:</b> <span class="cs-mono">[ ]</span> ikut (≤, ≥); <span class="cs-mono">( )</span> tidak (&lt;, &gt;); <span class="cs-mono">±∞</span> selalu <span class="cs-mono">)</span>.</p>
+          <p><b>Kuadrat:</b> semua ke kiri ⇒ faktorkan ⇒ akar di garis bilangan ⇒ uji tanda.</p>
+          <p class="cs-formula">a &gt; 0: + di luar akar, − di antara akar; a &lt; 0: kebalikannya</p>
+          <p class="cs-formula cs-formula--warm">x²−x−6 &lt; 0 ⇒ (x−3)(x+2) &lt; 0 ⇒ −2 &lt; x &lt; 3</p>
+          <p><b>Nilai mutlak</b> (a&gt;0): |x|&lt;a ⇒ −a&lt;x&lt;a; |x|&gt;a ⇒ x&lt;−a atau x&gt;a.</p>
+        </section>
+
+        <section class="cs-block cs-block--cobalt">
+          <h2><span>02</span> Fungsi kuadrat</h2>
+          <p class="cs-formula">y = ax²+bx+c · x<sub>v</sub> = −b/(2a)<br>y<sub>v</sub> = f(x<sub>v</sub>) = c − b²/(4a)</p>
+          <p><b>a &gt; 0:</b> terbuka ke atas, minimum, range <span class="cs-mono">[y<sub>v</sub>, ∞)</span>. <b>a &lt; 0:</b> ke bawah, maksimum, range <span class="cs-mono">(−∞, y<sub>v</sub>]</span>.</p>
+          <p><b>Sketsa:</b> akar · potong y=(0,c) · vertex · sumbu x=x<sub>v</sub> · arah buka. Labeli semua.</p>
+          <p class="cs-formula">x = (−b ± √(b²−4ac))/(2a) · D=b²−4ac</p>
+          <p class="cs-formula cs-formula--warm">x²+5x+6: akar −3,−2 · vertex (−5/2,−1/4) · range [−1/4,∞)</p>
+          <p><b>Domain:</b> penyebut ≠0 · akar genap: isi ≥0 · log: isi &gt;0. Range ≠ kodomain.</p>
+        </section>
+
+        <section class="cs-block cs-block--olive">
+          <h2><span>03</span> Fungsi, invers, komposisi</h2>
+          <p><b>Fungsi:</b> setiap input punya <b>tepat satu</b> output. Domain=input; kodomain=tujuan; range=output tercapai.</p>
+          <p><b>Injektif:</b> f(a)=f(b)⇒a=b · <b>Surjektif:</b> range=kodomain · <b>Bijektif:</b> keduanya.</p>
+          <p><b>Invers:</b> y=f(x) ⇒ selesaikan x ⇒ tukar variabel. Domain f<sup>−1</sup> = range f.</p>
+          <p class="cs-formula">(f∘g)(x)=f(g(x)) · urutan tidak boleh dibalik<br>(f∘g)<sup>−1</sup> = g<sup>−1</sup>∘f<sup>−1</sup></p>
+          <p><b>Jebakan:</b> x² tidak injektif di ℝ, tetapi injektif di [0,∞).</p>
+        </section>
+
+        <section class="cs-block cs-block--gold">
+          <h2><span>04</span> Bilangan &amp; akar</h2>
+          <p class="cs-formula">ℕ ⊂ 𝕎 ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ · ℚ={a/b | a,b∈ℤ, b≠0}</p>
+          <p><b>Rasional:</b> bisa a/b. <b>Irasional:</b> √2, π, e. √9=3 rasional; 0,75=3/4.</p>
+          <p><b>0 dan 1</b> bukan prima/komposit · <b>2</b> satu-satunya prima genap.</p>
+          <p class="cs-formula">√(ab)=√a·√b · √(a/b)=√a/√b · √(a²)=|a|<br>(√a+√b)(√a−√b)=a−b · 1/√a=√a/a</p>
+        </section>
+
+        <section class="cs-block cs-block--plum">
+          <h2><span>05</span> Bilangan khusus</h2>
+          <p><b>Floor/ceiling:</b> ⌊3,5⌋=3, ⌈3,5⌉=4; ⌊−0,5⌋=−1, ⌈−0,5⌉=0. Jangan buang desimal.</p>
+          <p class="cs-formula">a=mq+r · 0≤r&lt;m · −25 mod 7=3</p>
+          <p><b>Log:</b> y=log<sub>a</sub>x ⇔ x=a<sup>y</sup>; a&gt;0, a≠1, x&gt;0. log<sub>a</sub>1=0, log<sub>a</sub>a=1.</p>
+          <p><b>Eksponen/faktorial:</b> a<sup>0</sup>=1, a<sup>−n</sup>=1/a<sup>n</sup>, 0!=1, n!=n·(n−1)!.</p>
+          <p><b>Rekursi:</b> f(n)=n·f(n−1), basis f(0)=1.</p>
+        </section>
+
+      </div>
+
+      <div class="cs-col">
+
+        <section class="cs-block cs-block--coral">
+          <h2><span>06</span> Trigonometri: nilai &amp; tanda</h2>
+          <p class="cs-formula">180°=π rad · rad=deg×π/180 · deg=rad×180/π</p>
+          <table class="cs-table">
+            <thead><tr><th>θ</th><th>0</th><th>π/6</th><th>π/4</th><th>π/3</th><th>π/2</th></tr></thead>
+            <tbody>
+              <tr><th>sin</th><td>0</td><td>1/2</td><td>√2/2</td><td>√3/2</td><td>1</td></tr>
+              <tr><th>cos</th><td>1</td><td>√3/2</td><td>√2/2</td><td>1/2</td><td>0</td></tr>
+              <tr><th>tan</th><td>0</td><td>1/√3</td><td>1</td><td>√3</td><td>—</td></tr>
+            </tbody>
+          </table>
+          <p><b>Tanda:</b> I semua + · II sin + · III tan + · IV cos +. Nilai absolut pakai sudut acuan ke sumbu x.</p>
+          <p class="cs-formula">−1≤sinθ,cosθ≤1 · sin(θ+2π)=sinθ · cos(θ+2π)=cosθ</p>
+        </section>
+
+        <section class="cs-block cs-block--coral">
+          <h2><span>07</span> Identitas</h2>
+          <p class="cs-formula">sin²x+cos²x=1 · 1+tan²x=sec²x · 1+cot²x=csc²x</p>
+          <p class="cs-formula">tan=sin/cos · cot=cos/sin · sec=1/cos · csc=1/sin</p>
+          <p class="cs-formula">sin(−x)=−sin x · cos(−x)=cos x · tan(−x)=−tan x</p>
+          <p class="cs-formula cs-formula--warm">sin2x=2sinxcosx<br>cos2x=cos²x−sin²x=2cos²x−1=1−2sin²x<br>1−cos2x=2sin²x · 1+cos2x=2cos²x</p>
+          <p><b>Ingat:</b> sin(−x)=<b>−</b>sinx. Lembar lama sempat menulis tanpa minus.</p>
+        </section>
+
+        <section class="cs-block cs-block--cobalt">
+          <h2><span>08</span> Limit aljabar</h2>
+          <p><b>Limit ≠ f(c).</b> Substitusi dulu; penyebut ≠0 ⇒ selesai. 0/0 ⇒ ubah bentuk.</p>
+          <p class="cs-formula">lim<sub>x→c</sub>f(x)=L ⇔ lim<sub>x→c⁻</sub>f(x)=lim<sub>x→c⁺</sub>f(x)=L</p>
+          <p><b>0/0:</b> faktorkan · sekawan · samakan penyebut · identitas. 0/0 bukan jawaban.</p>
+          <p class="cs-formula">x→∞: pangkat atas &lt; bawah ⇒0<br>pangkat sama ⇒ rasio koefisien tertinggi<br>pangkat atas &gt; bawah ⇒ ±∞</p>
+          <p><b>Kontinu:</b> f(c) ada ∧ limit ada ∧ limit=f(c). Lubang · loncat · tak berhingga.</p>
+          <p><b>Penyebut 0</b> belum tentu asimtot; bisa lubang. Asimtot tegak jika meledak ke ±∞.</p>
+        </section>
+
+        <section class="cs-block cs-block--coral">
+          <h2><span>09</span> Limit trigonometri</h2>
+          <p class="cs-formula">lim<sub>x→0</sub> sinx/x=1 · lim<sub>x→0</sub> tanx/x=1<br>lim<sub>x→0</sub> (1−cosx)/x=0 · lim<sub>x→0</sub> (1−cosax)/x²=a²/2<br>lim<sub>x→0</sub> sin(ax)/x=a · lim<sub>x→0</sub> sin(ax)/sin(bx)=a/b</p>
+          <p><b>Syarat:</b> radian. Teknik: munculkan sinu/u dengan u sama; tan⇒sin/cos; sec⇒1/cos.</p>
+          <p class="cs-formula cs-formula--warm">tan5θ/sin3θ ⇒ (sin5θ/5θ)(3θ/sin3θ)(5/3)(1/cos5θ) ⇒ 5/3</p>
+          <p class="cs-formula">(sin3t+4t)/(t·sect)=(sin3t/t+4)cost ⇒ (3+4)·1=7</p>
+          <p><b>Substitusi aman:</b> lim<sub>θ→π/2</sub> θcosθ=(π/2)·0=0.</p>
+        </section>
+
+        <section class="cs-block cs-block--gold">
+          <h2><span>10</span> Checklist sebelum setor</h2>
+          <ul class="cs-check">
+            <li>Tanda dibalik saat ×/÷ negatif?</li>
+            <li>Range bukan kodomain; f(c) bukan limit?</li>
+            <li>0/0 sudah diubah, bukan hasil akhir?</li>
+            <li>Limit trigonometri hanya radian?</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+
+    <footer class="cs-foot">
+      <span>batas. · cheat sheet UTS Kalkulus</span>
+      <span>5′ baca · 20′/soal · 5′ cek</span>
+      <span>1/1</span>
+    </footer>
+  </article>
+
+  <section class="cheat-legend no-print" aria-label="Cara memakai lembar">
+    <div>
+      <p class="section-kicker">kalau ruang masih sempit</p>
+      <h2>Prioritas isi lembar.</h2>
+    </div>
+    <div class="cheat-legend-grid">
+      <div><b>Wajib</b><span>Pertidaksamaan, fungsi kuadrat, limit 0/0, limit trigonometri, nilai istimewa, identitas Pythagoras.</span></div>
+      <div><b>Cadangan</b><span>Domain–range, invers/komposisi, modulo, floor, log, kontinuitas, asimtot.</span></div>
+      <div><b>Buang dulu</b><span>Sejarah bilangan, contoh panjang, identitas setengah sudut, jumlah-ke-perkalian, latihan.</span></div>
+    </div>
+  </section>
+
+  <footer class="cheat-page-foot no-print">
+    <a href="modul.html">← kembali ke modul</a>
+    <a href="uts-2025.html">arsip UTS 2025 →</a>
+  </footer>
+
+</main>
+<script>
+  document.getElementById('printCheat').addEventListener('click', function () {
+    window.print();
+  });
+</script>
+</body>
+</html>

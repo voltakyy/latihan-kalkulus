@@ -18,7 +18,7 @@ Lewat GitHub Pages: **https://voltakyy.github.io/latihan-kalkulus/**
 
 ## Modul bacaan
 
-Selain latihan, ada empat halaman materi dan satu arsip UTS. Mulai dari indeks [`modul.html`](modul.html).
+Selain latihan, ada empat halaman materi, satu arsip UTS, dan satu cheat sheet A5. Mulai dari indeks [`modul.html`](modul.html).
 
 | Halaman | Isi |
 | --- | --- |
@@ -27,10 +27,13 @@ Selain latihan, ada empat halaman materi dan satu arsip UTS. Mulai dari indeks [
 | [`materi-3.html`](materi-3.html) | Domain–kodomain–range, fungsi injektif/surjektif/bijektif, invers, komposisi, floor, modulo, log, rekursi |
 | [`materi-4.html`](materi-4.html) | Limit kiri–kanan, bentuk `0/0`, limit trigonometri, tak hingga, asimtot, kontinuitas |
 | [`uts-2025.html`](uts-2025.html) | Arsip UTS Gasal 2025/2026, kunci ringkas, pembahasan lengkap, timer simulasi 90 menit |
+| [`cheat-sheet.html`](cheat-sheet.html) | Lembar izin A5 satu muka: pertidaksamaan, fungsi kuadrat, limit, trigonometri, checklist jebakan |
 
 Setiap halaman materi punya daftar isi yang mengikuti posisi bacaan, contoh langkah demi langkah, latihan dengan pembahasan yang bisa dibuka-tutup, diagram SVG, dan tautan PDF sumber di bagian bawah. Gaya visual memakai [`styles.css`](styles.css) yang sama, dengan lapisan tambahan [`modul.css`](modul.css) dan interaksi di [`modul.js`](modul.js). Latihan 35 soal di beranda tetap berjalan lewat [`app.js`](app.js).
 
 PDF sumber disalin ke [`assets/pdf/`](assets/pdf/) agar halaman modul tetap bisa membuka materi asli. File PDF bersifat gambar, jadi isi modul ditulis ulang dari halaman yang sudah dirender, bukan diekstrak otomatis.
+
+Cheat sheet memakai aturan cetak `@page { size: A5 portrait; margin: 0 }` dan tinggi kertas tetap 210 mm, sehingga keluar sebagai satu halaman A5. Tombol **Cetak A5** memanggil dialog cetak browser; pilih skala 100% dan satu muka.
 
 ## Catatan soal
 

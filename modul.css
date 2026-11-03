@@ -1015,6 +1015,15 @@ details.solution[open] summary{border-bottom:1px dashed rgba(28,42,46,.25)}
   transition:transform .17s ease,box-shadow .17s ease;
 }
 .hub-uts:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--coral)}
+.hub-cheat{
+  margin-top:10px;
+  border-color:var(--cobalt);
+  background:linear-gradient(100deg,var(--cobalt-soft),#fffdf6 65%);
+  box-shadow:5px 5px 0 var(--cobalt);
+}
+.hub-cheat:hover{box-shadow:7px 7px 0 var(--cobalt)}
+.hub-cheat .hub-uts-seal{border-color:var(--cobalt);color:var(--cobalt)}
+.hub-cheat .hub-uts-cta{color:var(--cobalt)}
 .hub-uts-seal{
   width:64px;
   height:64px;
