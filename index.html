@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Batas &amp; Bentuk — Latihan UTS Kalkulus</title>
-<meta name="description" content="Latihan soal pilihan ganda UTS Kalkulus Reguler: pertidaksamaan, domain dan range, limit aljabar, serta limit trigonometri. Setiap soal dibahas langkah demi langkah.">
+<meta name="description" content="Latihan soal pilihan ganda UTS Kalkulus Reguler: bilangan dan modulo, trigonometri, fungsi invers, pertidaksamaan, domain dan range, limit aljabar, serta limit trigonometri. Setiap soal dibahas langkah demi langkah.">
 <meta name="theme-color" content="#f3efe3">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,26 +32,26 @@
       </a>
       <div class="head-meta">
         <span class="head-line">UTS Kalkulus Reguler</span>
-        <span class="stamp-badge">21 soal</span>
+        <span class="stamp-badge">35 soal</span>
       </div>
     </header>
 
     <div class="hero">
       <div class="hero-copy">
-        <p class="kicker"><span class="kicker-box" aria-hidden="true">∫</span> pertidaksamaan · domain · limit</p>
+        <p class="kicker"><span class="kicker-box" aria-hidden="true">∫</span> bilangan · trigonometri · fungsi · limit</p>
         <h1>
-          <span>Dari tanda,</span>
-          <span class="h1-blue">ke grafik,</span>
+          <span>Dari akar,</span>
+          <span class="h1-blue">ke fungsi,</span>
           <span class="h1-last">ke <em>limit</em>.</span>
         </h1>
-        <p class="lede">Latihan pilihan ganda untuk UTS Kalkulus Reguler. Mulai dari garis bilangan, domain–range, sampai limit trigonometri. Tiap jawaban dibedah langkah demi langkah, bukan cuma dikasih kunci.</p>
+        <p class="lede">Latihan pilihan ganda untuk UTS Kalkulus Reguler. Dibuka dengan 14 soal materi sendiri—bilangan, trigonometri, dan fungsi invers—lalu pertidaksamaan, domain–range, sampai limit. Tiap jawaban dibedah langkah demi langkah, bukan cuma dikasih kunci.</p>
 
         <div class="hero-actions">
           <button id="startBtn" class="btn btn-primary" type="button">
             Mulai latihan
             <svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <p class="cta-note">13 soal inti<br>8 soal tantangan</p>
+          <p class="cta-note">14 soal materi sendiri<br>13 inti · 8 tantangan</p>
         </div>
 
         <p id="bestNote" class="best-note" hidden></p>
@@ -173,9 +173,9 @@
       <div class="map-head">
         <div>
           <p class="section-kicker">peta UTS</p>
-          <h2 id="mapTitle">Empat jenis soal, satu alur berpikir.</h2>
+          <h2 id="mapTitle">Tujuh topik, satu alur berpikir.</h2>
         </div>
-        <p class="map-note">13 subsoal tipe A<br>+ 8 soal pendalaman</p>
+        <p class="map-note">14 materi sendiri<br>+ 13 inti · 8 tantangan</p>
       </div>
       <div id="topicList" class="topic-grid"></div>
       <div class="map-foot">
@@ -207,10 +207,10 @@
       </button>
       <div class="quiz-progress">
         <div class="progress-top">
-          <span id="qCounter" class="mono">Soal 01 / 21</span>
+          <span id="qCounter" class="mono">Soal 01 / 35</span>
           <span id="phaseLabel" class="phase-label mono">bagian inti</span>
         </div>
-        <div id="progressBar" class="progress-track" role="progressbar" aria-label="Kemajuan latihan" aria-valuemin="1" aria-valuemax="21" aria-valuenow="1">
+        <div id="progressBar" class="progress-track" role="progressbar" aria-label="Kemajuan latihan" aria-valuemin="1" aria-valuemax="35" aria-valuenow="1">
           <span id="progressFill" class="progress-fill"></span>
         </div>
       </div>
@@ -288,7 +288,7 @@
       </div>
 
       <div class="score-line">
-        <strong id="resScore">0 / 21</strong>
+        <strong id="resScore">0 / 35</strong>
         <span id="resPercent" class="mono">0% benar</span>
       </div>
 
@@ -365,6 +365,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script>
+<script src="questions/materi-sendiri.js"></script>
 <script src="questions/pertidaksamaan.js"></script>
 <script src="questions/domain-range.js"></script>
 <script src="questions/limit-aljabar.js"></script>

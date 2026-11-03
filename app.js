@@ -3,9 +3,30 @@
    ========================================================= */
 
 const BANK = window.QUESTION_BANK || [];
-const BEST_KEY = 'batas-bentuk-best-v1';
+const BEST_KEY = 'batas-bentuk-best-v2';
 
 const TOPIC_META = {
+  'Bilangan & Modulo': {
+    fg: '#8a5a17',
+    bg: '#f7eccf',
+    dot: '#c08a2e',
+    desc: 'akar, penyederhanaan, modulo',
+    formula: '-38=7(-6)+4'
+  },
+  'Trigonometri': {
+    fg: '#1f6b64',
+    bg: '#e0f0ec',
+    dot: '#2f8b80',
+    desc: 'sudut istimewa, radian, identitas',
+    formula: '\\sin^2x+\\cos^2x=1'
+  },
+  'Fungsi & Invers': {
+    fg: '#8c3a5c',
+    bg: '#f8e4ec',
+    dot: '#a84f72',
+    desc: 'komposisi, invers, domain',
+    formula: '(f\\circ g)(x)'
+  },
   'Pertidaksamaan': {
     fg: '#a83f28',
     bg: '#fbe8e1',
@@ -35,7 +56,15 @@ const TOPIC_META = {
     formula: '\\frac{\\sin u}{u}\\to1'
   }
 };
-const TOPIC_ORDER = Object.keys(TOPIC_META);
+const TOPIC_ORDER = [
+  'Bilangan & Modulo',
+  'Trigonometri',
+  'Fungsi & Invers',
+  'Pertidaksamaan',
+  'Domain & Range',
+  'Limit Aljabar',
+  'Limit Trigonometri'
+];
 
 const ARROW_SVG = '<svg class="btn-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7" fill="none" stroke="#6e7f3d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -253,9 +282,12 @@ function updateBestNote() {
 /* ---------- kuis ---------- */
 
 function buildDeck() {
-  const core = BANK.filter(question => !question.challenge);
+  const intro = BANK
+    .filter(question => question.intro)
+    .sort((a, b) => (a.introOrder || 0) - (b.introOrder || 0));
+  const core = BANK.filter(question => !question.intro && !question.challenge);
   const challenge = BANK.filter(question => question.challenge);
-  const ordered = [...shuffle(core), ...shuffle(challenge)];
+  const ordered = [...intro, ...shuffle(core), ...shuffle(challenge)];
 
   return ordered.map(question => {
     const opts = shuffle(
@@ -303,8 +335,13 @@ function renderQuestion() {
   progressFill.style.width = `${(state.index / total) * 100}%`;
   scoreNum.textContent = String(state.correctCount);
 
-  phaseLabel.textContent = question.challenge ? 'bagian tantangan' : 'bagian inti';
+  if (question.intro) {
+    phaseLabel.textContent = 'materi sendiri';
+  } else {
+    phaseLabel.textContent = question.challenge ? 'bagian tantangan' : 'bagian inti';
+  }
   phaseLabel.classList.toggle('is-challenge', Boolean(question.challenge));
+  phaseLabel.classList.toggle('is-intro', Boolean(question.intro));
 
   qChallenge.hidden = !question.challenge;
   qNumber.textContent = `#${String(state.index + 1).padStart(2, '0')}`;

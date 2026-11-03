@@ -330,7 +330,8 @@ h1 em{
   background:var(--tint);
 }
 .topic-card:nth-child(2n){border-right:0}
-.topic-card:nth-child(n+3){border-bottom:0}
+.topic-card:last-child:nth-child(odd){grid-column:1/-1}
+.topic-card:last-child{border-right:0;border-bottom:0}
 .topic-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .topic-no{font-family:var(--mono);font-size:8.5px;color:var(--muted)}
 .topic-count{
@@ -463,6 +464,7 @@ h1 em{
   text-transform:uppercase;
   color:var(--muted);
 }
+.phase-label.is-intro{border-color:#b08422;background:#f9e8a8;color:#7a5a10}
 .phase-label.is-challenge{border-color:var(--coral);background:var(--coral-soft);color:var(--coral)}
 .progress-track{
   height:8px;
@@ -1038,7 +1040,6 @@ h1 em{
   .map-note{margin-top:7px;text-align:left}
   .topic-grid{grid-template-columns:1fr}
   .topic-card{border-right:0;border-bottom:1.5px solid var(--ink)}
-  .topic-card:nth-child(n+3){border-bottom:1.5px solid var(--ink)}
   .topic-card:last-child{border-bottom:0}
   .map-foot{font-size:8.5px;gap:7px}
   .site-foot{font-size:9px;margin-top:31px}
