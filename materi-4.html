@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Materi 4 — Limit | Modul Kalkulus</title>
 <meta name="description" content="Modul limit: pengertian limit, limit kiri dan kanan, substitusi, bentuk 0/0, limit trigonometri, limit di tak hingga, asimtot tegak, dan kontinuitas.">
-<meta name="theme-color" content="#f3efe3">
+<meta name="theme-color" content="#f6f1e6">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,100;1,9..144,300..900,100&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Spline+Sans+Mono:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="modul.css">
+<link rel="stylesheet" href="tema.css">
 </head>
 <body class="doc-page">
 <div id="readProgress" class="read-progress" aria-hidden="true"><span></span></div>
@@ -22,10 +23,10 @@
     <a class="brand" href="index.html" aria-label="Batas dan Bentuk, kembali ke beranda">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40">
-          <rect width="40" height="40" rx="8" fill="#fffdf6"/>
-          <path d="M7 20h26M20 33V7" stroke="#1c2a2e" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M11 9l6 16 6-16" fill="none" stroke="#24549b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="17" cy="25" r="2.2" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
+          <rect width="40" height="40" rx="8" fill="#fffdf7"/>
+          <path d="M7 20h26M20 33V7" stroke="#2f3330" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M11 9l6 16 6-16" fill="none" stroke="#3c5f8c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="25" r="2.2" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
         </svg>
       </span>
       <span class="brand-word">batas<span>.</span></span>
@@ -40,7 +41,7 @@
     </div>
   </header>
 
-  <section class="module-hero" style="--chapter-ink:#52622c;--chapter-soft:#eef3e1;--chapter-accent:#6e7f3d">
+  <section class="module-hero" style="--chapter-ink:#5c6845;--chapter-soft:#eef1e3;--chapter-accent:#68774f">
     <div class="module-hero-copy">
       <div class="eyebrow-row">
         <span class="chapter-pill">Materi 04 · Limit</span>
@@ -144,24 +145,24 @@
           <svg viewBox="0 0 560 310" role="img" aria-labelledby="holeTitle holeDesc">
             <title id="holeTitle">Grafik fungsi dengan lubang dan titik terpisah</title>
             <desc id="holeDesc">Garis y = x + 1 memiliki lubang di (2,3), sedangkan nilai fungsi di x = 2 adalah 5. Limit di x = 2 tetap 3.</desc>
-            <rect width="560" height="310" fill="#fffdf6"/>
-            <g stroke="#24549b" stroke-width=".7" opacity=".2">
+            <rect width="560" height="310" fill="#fffdf7"/>
+            <g stroke="#3c5f8c" stroke-width=".7" opacity=".2">
               <path d="M80 40h420M80 90h420M80 140h420M80 190h420M80 240h420"/>
               <path d="M120 20v250M170 20v250M220 20v250M270 20v250M320 20v250M370 20v250M420 20v250M470 20v250"/>
             </g>
-            <path d="M80 270h420M120 20v250" stroke="#1c2a2e" stroke-width="1.4"/>
-            <path d="M500 270l-8-3v6ZM120 20l-3 8h6Z" fill="#1c2a2e"/>
-            <text x="506" y="274" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#5c6b6c">x</text>
-            <text x="126" y="18" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#5c6b6c">y</text>
-            <path d="M150 238L350 88" stroke="#24549b" stroke-width="2.4"/>
-            <circle cx="260" cy="148" r="5" fill="#fffdf6" stroke="#24549b" stroke-width="2.2"/>
-            <circle cx="260" cy="88" r="5" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
-            <path d="M260 148H120M260 148V270" stroke="#8b9797" stroke-width="1" stroke-dasharray="3 4"/>
-            <path d="M260 88H120" stroke="#d4553f" stroke-width="1" stroke-dasharray="3 4"/>
-            <text x="266" y="166" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">lubang: (2, 3)</text>
-            <text x="270" y="82" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#d4553f">f(2) = 5</text>
-            <text x="148" y="292" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">limit di x → 2 adalah 3, walaupun nilai fungsinya 5</text>
-            <text x="350" y="74" font-family="'Fraunces',serif" font-size="14" font-style="italic" fill="#24549b">y = x + 1</text>
+            <path d="M80 270h420M120 20v250" stroke="#2f3330" stroke-width="1.4"/>
+            <path d="M500 270l-8-3v6ZM120 20l-3 8h6Z" fill="#2f3330"/>
+            <text x="506" y="274" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#62685f">x</text>
+            <text x="126" y="18" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#62685f">y</text>
+            <path d="M150 238L350 88" stroke="#3c5f8c" stroke-width="2.4"/>
+            <circle cx="260" cy="148" r="5" fill="#fffdf7" stroke="#3c5f8c" stroke-width="2.2"/>
+            <circle cx="260" cy="88" r="5" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
+            <path d="M260 148H120M260 148V270" stroke="#7d8379" stroke-width="1" stroke-dasharray="3 4"/>
+            <path d="M260 88H120" stroke="#a95741" stroke-width="1" stroke-dasharray="3 4"/>
+            <text x="266" y="166" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">lubang: (2, 3)</text>
+            <text x="270" y="82" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#a95741">f(2) = 5</text>
+            <text x="148" y="292" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">limit di x → 2 adalah 3, walaupun nilai fungsinya 5</text>
+            <text x="350" y="74" font-family="'Fraunces',serif" font-size="14" font-style="italic" fill="#3c5f8c">y = x + 1</text>
           </svg>
           <figcaption>Lubang pada grafik tidak menghalangi limit. Yang penting adalah ke arah mana $f(x)$ menuju saat $x$ mendekati 2.</figcaption>
         </figure>
@@ -186,7 +187,7 @@
             <p>$\displaystyle\lim_{x\to c^-}f(x)=L$</p>
             <p>Nilai $f(x)$ saat $x$ mendekati $c$ dari sisi $x&lt;c$.</p>
           </div>
-          <div class="def-card" style="box-shadow:3px 3px 0 #6e7f3d">
+          <div class="def-card">
             <span class="def-label">limit kanan</span>
             <p>$\displaystyle\lim_{x\to c^+}f(x)=L$</p>
             <p>Nilai $f(x)$ saat $x$ mendekati $c$ dari sisi $x&gt;c$.</p>
@@ -382,7 +383,7 @@
             <p>$\displaystyle\lim_{x\to\infty}f(x)$</p>
             <p>Membaca nilai $f(x)$ ketika $x$ membesar tanpa batas. Hasilnya bisa bilangan real, $+\infty$, atau $-\infty$.</p>
           </div>
-          <div class="def-card" style="box-shadow:3px 3px 0 #d4553f">
+          <div class="def-card">
             <span class="def-label">limit tak berhingga</span>
             <p>$\displaystyle\lim_{x\to c}f(x)=\pm\infty$</p>
             <p>Membaca nilai $f(x)$ yang membesar/mengecil tanpa batas ketika $x$ mendekati $c$. Sering memunculkan asimtot tegak.</p>
@@ -427,22 +428,22 @@
           <svg viewBox="0 0 560 310" role="img" aria-labelledby="asymTitle asymDesc">
             <title id="asymTitle">Grafik y = 1/(x-2) dan asimtot tegak x = 2</title>
             <desc id="asymDesc">Hiperbola dengan asimtot tegak di x sama dengan 2 dan asimtot datar y sama dengan 0.</desc>
-            <rect width="560" height="310" fill="#fffdf6"/>
-            <g stroke="#24549b" stroke-width=".7" opacity=".18">
+            <rect width="560" height="310" fill="#fffdf7"/>
+            <g stroke="#3c5f8c" stroke-width=".7" opacity=".18">
               <path d="M50 50h480M50 100h480M50 150h480M50 200h480M50 250h480"/>
               <path d="M100 20v270M150 20v270M200 20v270M250 20v270M300 20v270M350 20v270M400 20v270M450 20v270M500 20v270"/>
             </g>
-            <path d="M50 155h480M300 20v270" stroke="#1c2a2e" stroke-width="1.4"/>
-            <path d="M530 155l-8-3v6ZM300 20l-3 8h6Z" fill="#1c2a2e"/>
-            <text x="536" y="159" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#5c6b6c">x</text>
-            <text x="306" y="18" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#5c6b6c">y</text>
-            <path d="M300 20v270" stroke="#d4553f" stroke-width="1.4" stroke-dasharray="5 4"/>
-            <text x="310" y="282" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#d4553f">x = 2</text>
-            <path d="M50 155h480" stroke="#6e7f3d" stroke-width="1.2" stroke-dasharray="5 4" opacity=".8"/>
-            <path d="M312 54C360 90 390 130 440 148M288 256C240 220 210 180 160 162" fill="none" stroke="#24549b" stroke-width="2.6"/>
-            <text x="445" y="140" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#24549b">x → 2⁺</text>
-            <text x="115" y="186" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#24549b">x → 2⁻</text>
-            <text x="52" y="292" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">nilai meledak di sekitar asimtot; limit dua arah tidak ada</text>
+            <path d="M50 155h480M300 20v270" stroke="#2f3330" stroke-width="1.4"/>
+            <path d="M530 155l-8-3v6ZM300 20l-3 8h6Z" fill="#2f3330"/>
+            <text x="536" y="159" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#62685f">x</text>
+            <text x="306" y="18" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#62685f">y</text>
+            <path d="M300 20v270" stroke="#a95741" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <text x="310" y="282" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#a95741">x = 2</text>
+            <path d="M50 155h480" stroke="#68774f" stroke-width="1.2" stroke-dasharray="5 4" opacity=".8"/>
+            <path d="M312 54C360 90 390 130 440 148M288 256C240 220 210 180 160 162" fill="none" stroke="#3c5f8c" stroke-width="2.6"/>
+            <text x="445" y="140" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#3c5f8c">x → 2⁺</text>
+            <text x="115" y="186" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#3c5f8c">x → 2⁻</text>
+            <text x="52" y="292" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">nilai meledak di sekitar asimtot; limit dua arah tidak ada</text>
           </svg>
           <figcaption>Asimtot tegak $x=2$ muncul karena penyebut menuju nol, tetapi nilai fungsinya tidak menuju satu bilangan real.</figcaption>
         </figure>

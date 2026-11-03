@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Materi 1 — Bilangan &amp; Representasi | Modul Kalkulus</title>
 <meta name="description" content="Modul bilangan dan representasi: beda bilangan dan angka, peta himpunan N–Z–Q–R–C, sifat bilangan, garis bilangan, bidang koordinat, operasi, dan akar.">
-<meta name="theme-color" content="#f3efe3">
+<meta name="theme-color" content="#f6f1e6">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,100;1,9..144,300..900,100&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Spline+Sans+Mono:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="modul.css">
+<link rel="stylesheet" href="tema.css">
 </head>
 <body class="doc-page">
 <div id="readProgress" class="read-progress" aria-hidden="true"><span></span></div>
@@ -22,10 +23,10 @@
     <a class="brand" href="index.html" aria-label="Batas dan Bentuk, kembali ke beranda">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40">
-          <rect width="40" height="40" rx="8" fill="#fffdf6"/>
-          <path d="M7 20h26M20 33V7" stroke="#1c2a2e" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M11 9l6 16 6-16" fill="none" stroke="#24549b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="17" cy="25" r="2.2" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
+          <rect width="40" height="40" rx="8" fill="#fffdf7"/>
+          <path d="M7 20h26M20 33V7" stroke="#2f3330" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M11 9l6 16 6-16" fill="none" stroke="#3c5f8c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="25" r="2.2" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
         </svg>
       </span>
       <span class="brand-word">batas<span>.</span></span>
@@ -40,7 +41,7 @@
     </div>
   </header>
 
-  <section class="module-hero" style="--chapter-ink:#8a5a17;--chapter-soft:#f7eccf;--chapter-accent:#c08a2e">
+  <section class="module-hero" style="--chapter-ink:#7a5a24;--chapter-soft:#f6eedb;--chapter-accent:#a67c3f">
     <div class="module-hero-copy">
       <div class="eyebrow-row">
         <span class="chapter-pill">Materi 01 · Bilangan</span>
@@ -130,7 +131,7 @@
             <p><strong>Konsep abstrak.</strong> Ia menjawab “berapa banyak?”, “seberapa panjang?”, atau “di posisi mana?”.</p>
             <p>Contoh: banyak buku di meja, suhu udara, panjang kabel.</p>
           </div>
-          <div class="def-card" style="box-shadow:3px 3px 0 #c08a2e">
+          <div class="def-card">
             <span class="def-label">angka</span>
             <p><strong>Lambang tertulis.</strong> Ia adalah representasi dari bilangan, bukan bilangan itu sendiri.</p>
             <p>Contoh: $5$, $\mathrm{V}$, $٥$, atau $101_2$ bisa sama-sama mewakili lima.</p>
@@ -173,26 +174,26 @@
           <svg viewBox="0 0 560 330" role="img" aria-labelledby="setTitle setDesc">
             <title id="setTitle">Diagram bersarang himpunan bilangan</title>
             <desc id="setDesc">Bilangan kompleks memuat bilangan real, yang memuat bilangan rasional, bilangan bulat, dan bilangan asli. Bilangan irasional berada di dalam real tetapi di luar rasional; bilangan imajiner berada di dalam kompleks tetapi di luar real.</desc>
-            <rect width="560" height="330" fill="#fffdf6"/>
-            <rect x="17" y="17" width="526" height="296" rx="20" fill="#f1e5ef" stroke="#1c2a2e" stroke-width="1.8"/>
-            <text x="33" y="40" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#7c4f79">ℂ kompleks</text>
-            <rect x="48" y="53" width="464" height="235" rx="17" fill="#e3ebf8" stroke="#1c2a2e" stroke-width="1.8"/>
-            <text x="64" y="76" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#24549b">ℝ real</text>
-            <rect x="84" y="88" width="392" height="173" rx="14" fill="#eef3e1" stroke="#1c2a2e" stroke-width="1.8"/>
-            <text x="100" y="111" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#52622c">ℚ rasional</text>
-            <rect x="124" y="120" width="312" height="113" rx="12" fill="#f9e8a8" stroke="#1c2a2e" stroke-width="1.8"/>
-            <text x="140" y="143" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#8a5a17">ℤ bulat</text>
-            <rect x="166" y="151" width="228" height="49" rx="9" fill="#fbe8e1" stroke="#1c2a2e" stroke-width="1.8"/>
-            <text x="280" y="172" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#a83f28">ℕ asli</text>
-            <text x="280" y="188" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#a83f28">{1, 2, 3, …}</text>
+            <rect width="560" height="330" fill="#fffdf7"/>
+            <rect x="17" y="17" width="526" height="296" rx="20" fill="#f2e9ef" stroke="#2f3330" stroke-width="1.8"/>
+            <text x="33" y="40" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#7b5d75">ℂ kompleks</text>
+            <rect x="48" y="53" width="464" height="235" rx="17" fill="#e8eef5" stroke="#2f3330" stroke-width="1.8"/>
+            <text x="64" y="76" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#3c5f8c">ℝ real</text>
+            <rect x="84" y="88" width="392" height="173" rx="14" fill="#eef1e3" stroke="#2f3330" stroke-width="1.8"/>
+            <text x="100" y="111" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#5c6845">ℚ rasional</text>
+            <rect x="124" y="120" width="312" height="113" rx="12" fill="#f5e7bd" stroke="#2f3330" stroke-width="1.8"/>
+            <text x="140" y="143" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#7a5a24">ℤ bulat</text>
+            <rect x="166" y="151" width="228" height="49" rx="9" fill="#f6e7df" stroke="#2f3330" stroke-width="1.8"/>
+            <text x="280" y="172" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#a83f28">ℕ asli</text>
+            <text x="280" y="188" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#a83f28">{1, 2, 3, …}</text>
 
-            <text x="392" y="112" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#52622c">0, negatif → ℤ</text>
-            <text x="392" y="145" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8a5a17">pecahan → ℚ</text>
-            <text x="452" y="78" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#24549b">√2, π, e → ℝ∖ℚ</text>
-            <text x="418" y="40" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#7c4f79">i, 2 + 3i → ℂ∖ℝ</text>
+            <text x="392" y="112" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#5c6845">0, negatif → ℤ</text>
+            <text x="392" y="145" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7a5a24">pecahan → ℚ</text>
+            <text x="452" y="78" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#3c5f8c">√2, π, e → ℝ∖ℚ</text>
+            <text x="418" y="40" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7b5d75">i, 2 + 3i → ℂ∖ℝ</text>
 
-            <path d="M476 235c25 0 35 16 35 32" fill="none" stroke="#8b9797" stroke-width="1" stroke-dasharray="3 4"/>
-            <text x="17" y="326" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8b9797">setiap lapisan memuat semua lapisan di dalamnya</text>
+            <path d="M476 235c25 0 35 16 35 32" fill="none" stroke="#7d8379" stroke-width="1" stroke-dasharray="3 4"/>
+            <text x="17" y="326" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#7d8379">setiap lapisan memuat semua lapisan di dalamnya</text>
           </svg>
           <figcaption>Diagram bersarang: N ⊂ W ⊂ Z ⊂ Q ⊂ R ⊂ C. Bilangan irasional dan imajiner menempati “sisa” di dalam lapisan yang lebih luas.</figcaption>
         </figure>
@@ -280,13 +281,13 @@
             <span class="def-label">1 · titik</span>
             <p>Pasangan koordinat $(x,y)$ menyatakan posisi pada bidang. Contoh: $(2,3)$ berarti 2 satuan ke kanan dan 3 satuan ke atas.</p>
           </div>
-          <div class="def-card" style="box-shadow:3px 3px 0 #6e7f3d">
+          <div class="def-card">
             <span class="def-label">2 · garis bilangan</span>
             <p>Setiap bilangan real dapat ditempatkan sebagai satu titik pada garis. Urutan kiri–kanan menunjukkan nilai yang lebih kecil atau lebih besar.</p>
           </div>
         </div>
 
-        <div class="def-card" style="box-shadow:3px 3px 0 #7c4f79">
+        <div class="def-card">
           <span class="def-label">3 · bidang</span>
           <p>Pertidaksamaan seperti $x+y\ge3$ menghasilkan <em>daerah</em>, bukan satu titik. Gambar garis $x+y=3$ sebagai batas, lalu arsir sisi yang memenuhi.</p>
         </div>
@@ -295,55 +296,55 @@
           <svg viewBox="0 0 560 300" role="img" aria-labelledby="repTitle repDesc">
             <title id="repTitle">Tiga representasi bilangan</title>
             <desc id="repDesc">Titik (2,3) pada bidang koordinat, titik-titik pada garis bilangan, dan daerah yang memenuhi x + y lebih besar atau sama dengan 3.</desc>
-            <rect width="560" height="300" fill="#fffdf6"/>
+            <rect width="560" height="300" fill="#fffdf7"/>
 
             <g transform="translate(20 24)">
-              <text x="0" y="0" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#24549b">TITIK</text>
-              <path d="M20 16v190M20 206h160" stroke="#1c2a2e" stroke-width="1.4"/>
-              <path d="M180 206l-7-3v6ZM20 16l-3 7h6Z" fill="#1c2a2e"/>
-              <g stroke="#24549b" stroke-width=".7" opacity=".45">
+              <text x="0" y="0" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#3c5f8c">TITIK</text>
+              <path d="M20 16v190M20 206h160" stroke="#2f3330" stroke-width="1.4"/>
+              <path d="M180 206l-7-3v6ZM20 16l-3 7h6Z" fill="#2f3330"/>
+              <g stroke="#3c5f8c" stroke-width=".7" opacity=".45">
                 <path d="M50 206v-20M80 206v-20M110 206v-20M140 206v-20M170 206v-20"/>
                 <path d="M20 176h20M20 146h20M20 116h20M20 86h20M20 56h20"/>
               </g>
-              <text x="20" y="222" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">0</text>
-              <text x="80" y="222" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">1</text>
-              <text x="140" y="222" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">2</text>
-              <text x="175" y="222" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">x</text>
-              <path d="M140 206V116M140 116H20" stroke="#d4553f" stroke-width="1.2" stroke-dasharray="3 3"/>
-              <circle cx="140" cy="116" r="4.5" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
-              <text x="140" y="106" text-anchor="middle" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#1c2a2e">(2, 3)</text>
-              <text x="39" y="236" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8b9797">2 satuan kanan, 3 satuan atas</text>
+              <text x="20" y="222" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">0</text>
+              <text x="80" y="222" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">1</text>
+              <text x="140" y="222" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">2</text>
+              <text x="175" y="222" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">x</text>
+              <path d="M140 206V116M140 116H20" stroke="#a95741" stroke-width="1.2" stroke-dasharray="3 3"/>
+              <circle cx="140" cy="116" r="4.5" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
+              <text x="140" y="106" text-anchor="middle" font-family="'Fraunces',serif" font-size="13" font-style="italic" fill="#2f3330">(2, 3)</text>
+              <text x="39" y="236" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#7d8379">2 satuan kanan, 3 satuan atas</text>
             </g>
 
             <g transform="translate(198 24)">
-              <text x="0" y="0" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#6e7f3d">GARIS BILANGAN</text>
-              <path d="M8 106h150" stroke="#1c2a2e" stroke-width="1.4"/>
-              <path d="M158 106l-7-3v6ZM8 106l7-3v6Z" fill="#1c2a2e"/>
-              <g fill="#d4553f" stroke="#1c2a2e" stroke-width="1">
+              <text x="0" y="0" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#68774f">GARIS BILANGAN</text>
+              <path d="M8 106h150" stroke="#2f3330" stroke-width="1.4"/>
+              <path d="M158 106l-7-3v6ZM8 106l7-3v6Z" fill="#2f3330"/>
+              <g fill="#a95741" stroke="#2f3330" stroke-width="1">
                 <circle cx="35" cy="106" r="4"/><circle cx="65" cy="106" r="4"/><circle cx="95" cy="106" r="4"/><circle cx="125" cy="106" r="4"/>
               </g>
-              <g font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c" text-anchor="middle">
+              <g font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f" text-anchor="middle">
                 <text x="35" y="122">−2</text><text x="65" y="122">−1</text><text x="95" y="122">0</text><text x="125" y="122">1</text><text x="150" y="122">2</text>
               </g>
-              <text x="0" y="149" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8b9797">urutan · jarak · pertidaksamaan</text>
-              <rect x="8" y="162" width="142" height="30" rx="4" fill="#eef3e1" stroke="#6e7f3d" stroke-width="1"/>
-              <text x="18" y="181" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#52622c">−2 &lt; 0 &lt; 1 &lt; 2</text>
+              <text x="0" y="149" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#7d8379">urutan · jarak · pertidaksamaan</text>
+              <rect x="8" y="162" width="142" height="30" rx="4" fill="#eef1e3" stroke="#68774f" stroke-width="1"/>
+              <text x="18" y="181" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#5c6845">−2 &lt; 0 &lt; 1 &lt; 2</text>
             </g>
 
             <g transform="translate(372 24)">
-              <text x="0" y="0" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#7c4f79">BIDANG</text>
-              <path d="M18 16v170M18 186h154" stroke="#1c2a2e" stroke-width="1.4"/>
-              <path d="M172 186l-7-3v6ZM18 16l-3 7h6Z" fill="#1c2a2e"/>
-              <path d="M24 174L154 44" stroke="#7c4f79" stroke-width="1.6"/>
-              <path d="M24 174L154 44L154 174Z" fill="#7c4f79" fill-opacity=".12" stroke="none"/>
-              <path d="M154 44v130H24" fill="none" stroke="#7c4f79" stroke-width="1" stroke-dasharray="3 4"/>
-              <text x="110" y="32" font-family="'Fraunces',serif" font-size="12" font-style="italic" fill="#7c4f79">x + y ≥ 3</text>
-              <text x="128" y="200" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">x</text>
-              <text x="9" y="27" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#5c6b6c">y</text>
-              <text x="92" y="151" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#6b5a78">daerah</text>
-              <text x="92" y="162" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#6b5a78">penyelesaian</text>
+              <text x="0" y="0" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#7b5d75">BIDANG</text>
+              <path d="M18 16v170M18 186h154" stroke="#2f3330" stroke-width="1.4"/>
+              <path d="M172 186l-7-3v6ZM18 16l-3 7h6Z" fill="#2f3330"/>
+              <path d="M24 174L154 44" stroke="#7b5d75" stroke-width="1.6"/>
+              <path d="M24 174L154 44L154 174Z" fill="#7b5d75" fill-opacity=".12" stroke="none"/>
+              <path d="M154 44v130H24" fill="none" stroke="#7b5d75" stroke-width="1" stroke-dasharray="3 4"/>
+              <text x="110" y="32" font-family="'Fraunces',serif" font-size="12" font-style="italic" fill="#7b5d75">x + y ≥ 3</text>
+              <text x="128" y="200" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">x</text>
+              <text x="9" y="27" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#62685f">y</text>
+              <text x="92" y="151" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#6b5a78">daerah</text>
+              <text x="92" y="162" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#6b5a78">penyelesaian</text>
             </g>
-            <text x="20" y="288" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#8b9797">representasi berbeda, objek matematisnya tetap saling terhubung</text>
+            <text x="20" y="288" font-family="'Spline Sans Mono',monospace" font-size="7" fill="#7d8379">representasi berbeda, objek matematisnya tetap saling terhubung</text>
           </svg>
           <figcaption>Tiga cara membaca bilangan: sebagai titik, sebagai urutan pada garis, dan sebagai daerah yang memenuhi pertidaksamaan.</figcaption>
         </figure>

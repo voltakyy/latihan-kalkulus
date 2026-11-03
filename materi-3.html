@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Materi 3 — Fungsi &amp; Bilangan Khusus | Modul Kalkulus</title>
 <meta name="description" content="Modul fungsi: definisi dan notasi, domain–kodomain–range, injektif–surjektif–bijektif, invers, komposisi, floor, ceiling, modulo, faktorial, eksponen, logaritma, dan rekursi.">
-<meta name="theme-color" content="#f3efe3">
+<meta name="theme-color" content="#f6f1e6">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,100;1,9..144,300..900,100&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Spline+Sans+Mono:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="modul.css">
+<link rel="stylesheet" href="tema.css">
 </head>
 <body class="doc-page">
 <div id="readProgress" class="read-progress" aria-hidden="true"><span></span></div>
@@ -22,10 +23,10 @@
     <a class="brand" href="index.html" aria-label="Batas dan Bentuk, kembali ke beranda">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40">
-          <rect width="40" height="40" rx="8" fill="#fffdf6"/>
-          <path d="M7 20h26M20 33V7" stroke="#1c2a2e" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M11 9l6 16 6-16" fill="none" stroke="#24549b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="17" cy="25" r="2.2" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
+          <rect width="40" height="40" rx="8" fill="#fffdf7"/>
+          <path d="M7 20h26M20 33V7" stroke="#2f3330" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M11 9l6 16 6-16" fill="none" stroke="#3c5f8c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="25" r="2.2" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
         </svg>
       </span>
       <span class="brand-word">batas<span>.</span></span>
@@ -40,7 +41,7 @@
     </div>
   </header>
 
-  <section class="module-hero" style="--chapter-ink:#8c3a5c;--chapter-soft:#f8e4ec;--chapter-accent:#a84f72">
+  <section class="module-hero" style="--chapter-ink:#7d4a60;--chapter-soft:#f4e9ee;--chapter-accent:#916074">
     <div class="module-hero-copy">
       <div class="eyebrow-row">
         <span class="chapter-pill">Materi 03 · Fungsi</span>
@@ -136,29 +137,29 @@
           <svg viewBox="0 0 560 300" role="img" aria-labelledby="fungsiTitle fungsiDesc">
             <title id="fungsiTitle">Diagram panah sebuah fungsi</title>
             <desc id="fungsiDesc">Himpunan A berisi a, b, c dipetakan ke himpunan B berisi 1, 2, 3, 4. Semua elemen A punya satu panah. Range-nya adalah 1 dan 3.</desc>
-            <rect width="560" height="300" fill="#fffdf6"/>
-            <ellipse cx="145" cy="150" rx="92" ry="112" fill="#f8e4ec" stroke="#1c2a2e" stroke-width="2"/>
-            <ellipse cx="417" cy="150" rx="92" ry="112" fill="#e3ebf8" stroke="#1c2a2e" stroke-width="2"/>
-            <text x="145" y="39" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#8c3a5c">A · domain</text>
-            <text x="417" y="39" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#24549b">B · kodomain</text>
-            <g fill="#1c2a2e">
+            <rect width="560" height="300" fill="#fffdf7"/>
+            <ellipse cx="145" cy="150" rx="92" ry="112" fill="#f4e9ee" stroke="#2f3330" stroke-width="2"/>
+            <ellipse cx="417" cy="150" rx="92" ry="112" fill="#e8eef5" stroke="#2f3330" stroke-width="2"/>
+            <text x="145" y="39" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="11" fill="#7d4a60">A · domain</text>
+            <text x="417" y="39" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="11" fill="#3c5f8c">B · kodomain</text>
+            <g fill="#2f3330">
               <circle cx="109" cy="92" r="5"/><circle cx="109" cy="150" r="5"/><circle cx="109" cy="208" r="5"/>
               <circle cx="385" cy="78" r="5"/><circle cx="385" cy="126" r="5"/><circle cx="385" cy="174" r="5"/><circle cx="385" cy="222" r="5"/>
             </g>
-            <g font-family="'Fraunces',serif" font-size="17" font-style="italic" fill="#1c2a2e">
+            <g font-family="'Fraunces',serif" font-size="17" font-style="italic" fill="#2f3330">
               <text x="127" y="98">a</text><text x="127" y="156">b</text><text x="127" y="214">c</text>
               <text x="366" y="84">1</text><text x="366" y="132">2</text><text x="366" y="180">3</text><text x="366" y="228">4</text>
             </g>
-            <g stroke="#24549b" stroke-width="1.8" fill="none">
+            <g stroke="#3c5f8c" stroke-width="1.8" fill="none">
               <path d="M116 92C200 82 280 78 376 78" marker-end="url(#arrowF)"/>
               <path d="M116 150C200 150 270 174 376 174" marker-end="url(#arrowF)"/>
               <path d="M116 208C210 236 290 90 376 80" marker-end="url(#arrowF)"/>
             </g>
             <defs>
-              <marker id="arrowF" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3Z" fill="#24549b"/></marker>
+              <marker id="arrowF" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3Z" fill="#3c5f8c"/></marker>
             </defs>
-            <text x="145" y="286" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">setiap input punya satu panah</text>
-            <text x="417" y="286" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">4 tidak pernah dicapai</text>
+            <text x="145" y="286" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">setiap input punya satu panah</text>
+            <text x="417" y="286" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">4 tidak pernah dicapai</text>
           </svg>
           <figcaption>Contoh: $f(a)=1$, $f(b)=3$, $f(c)=1$. Dua input boleh berbagi output; yang dilarang adalah satu input punya dua output.</figcaption>
         </figure>
@@ -232,14 +233,14 @@
             <p>$f(a)=f(b)\Rightarrow a=b$.</p>
             <p>Uji garis horizontal: setiap garis horizontal memotong grafik paling banyak satu kali.</p>
           </div>
-          <div class="def-card" style="box-shadow:3px 3px 0 #a84f72">
+          <div class="def-card">
             <span class="def-label">surjektif · pada</span>
             <p>Setiap elemen kodomain merupakan hasil dari setidaknya satu input.</p>
             <p>Kuncinya: $\text{range}=\text{kodomain}$.</p>
           </div>
         </div>
 
-        <div class="def-card" style="box-shadow:3px 3px 0 #6e7f3d">
+        <div class="def-card">
           <span class="def-label">bijektif · korespondensi satu-satu</span>
           <p>Injektif sekaligus surjektif. Setiap input punya output unik, dan setiap output di kodomain tercapai tepat satu kali.</p>
           <p>Fungsi bijektif punya invers yang juga merupakan fungsi dari kodomain kembali ke domain.</p>
@@ -323,19 +324,19 @@
           <svg viewBox="0 0 560 190" role="img" aria-labelledby="kompTitle kompDesc">
             <title id="kompTitle">Alur komposisi fungsi</title>
             <desc id="kompDesc">x masuk ke fungsi g menghasilkan g(x), lalu masuk ke fungsi f menghasilkan f(g(x)).</desc>
-            <rect width="560" height="190" fill="#fffdf6"/>
-            <circle cx="76" cy="94" r="28" fill="#f8e4ec" stroke="#1c2a2e" stroke-width="1.6"/>
+            <rect width="560" height="190" fill="#fffdf7"/>
+            <circle cx="76" cy="94" r="28" fill="#f4e9ee" stroke="#2f3330" stroke-width="1.6"/>
             <text x="76" y="100" text-anchor="middle" font-family="'Fraunces',serif" font-size="18" font-style="italic">x</text>
-            <circle cx="254" cy="94" r="42" fill="#e3ebf8" stroke="#1c2a2e" stroke-width="1.6"/>
+            <circle cx="254" cy="94" r="42" fill="#e8eef5" stroke="#2f3330" stroke-width="1.6"/>
             <text x="254" y="100" text-anchor="middle" font-family="'Fraunces',serif" font-size="18" font-style="italic">g(x)</text>
-            <circle cx="455" cy="94" r="52" fill="#eef3e1" stroke="#1c2a2e" stroke-width="1.6"/>
+            <circle cx="455" cy="94" r="52" fill="#eef1e3" stroke="#2f3330" stroke-width="1.6"/>
             <text x="455" y="100" text-anchor="middle" font-family="'Fraunces',serif" font-size="18" font-style="italic">f(g(x))</text>
-            <path d="M106 94h100" stroke="#24549b" stroke-width="1.8" marker-end="url(#arrowK)"/>
-            <path d="M298 94h100" stroke="#24549b" stroke-width="1.8" marker-end="url(#arrowK)"/>
-            <defs><marker id="arrowK" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3Z" fill="#24549b"/></marker></defs>
-            <text x="156" y="82" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#24549b">g</text>
-            <text x="348" y="82" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#24549b">f</text>
-            <text x="280" y="168" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7.5" fill="#8b9797">langkah 1: masukkan x ke g · langkah 2: masukkan g(x) ke f</text>
+            <path d="M106 94h100" stroke="#3c5f8c" stroke-width="1.8" marker-end="url(#arrowK)"/>
+            <path d="M298 94h100" stroke="#3c5f8c" stroke-width="1.8" marker-end="url(#arrowK)"/>
+            <defs><marker id="arrowK" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3Z" fill="#3c5f8c"/></marker></defs>
+            <text x="156" y="82" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#3c5f8c">g</text>
+            <text x="348" y="82" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#3c5f8c">f</text>
+            <text x="280" y="168" text-anchor="middle" font-family="'Spline Sans Mono',monospace" font-size="7.5" fill="#7d8379">langkah 1: masukkan x ke g · langkah 2: masukkan g(x) ke f</text>
           </svg>
           <figcaption>Urutan penting: $(f\circ g)(x)$ tidak sama dengan $(g\circ f)(x)$ pada umumnya.</figcaption>
         </div>

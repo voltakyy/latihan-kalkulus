@@ -5,14 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Materi 2 — Trigonometri | Modul Kalkulus</title>
 <meta name="description" content="Modul trigonometri: segitiga siku-siku, derajat dan radian, unit circle, nilai sudut istimewa, delapan kelompok identitas, dan latihan bertahap.">
-<meta name="theme-color" content="#f3efe3">
+<meta name="theme-color" content="#f6f1e6">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,100;1,9..144,300..900,100&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Spline+Sans+Mono:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="modul.css">
+<link rel="stylesheet" href="tema.css">
 </head>
 <body class="doc-page">
 <div id="readProgress" class="read-progress" aria-hidden="true"><span></span></div>
@@ -22,10 +23,10 @@
     <a class="brand" href="index.html" aria-label="Batas dan Bentuk, kembali ke beranda">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40">
-          <rect width="40" height="40" rx="8" fill="#fffdf6"/>
-          <path d="M7 20h26M20 33V7" stroke="#1c2a2e" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M11 9l6 16 6-16" fill="none" stroke="#24549b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="17" cy="25" r="2.2" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
+          <rect width="40" height="40" rx="8" fill="#fffdf7"/>
+          <path d="M7 20h26M20 33V7" stroke="#2f3330" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M11 9l6 16 6-16" fill="none" stroke="#3c5f8c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="17" cy="25" r="2.2" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
         </svg>
       </span>
       <span class="brand-word">batas<span>.</span></span>
@@ -40,7 +41,7 @@
     </div>
   </header>
 
-  <section class="module-hero" style="--chapter-ink:#1f6b64;--chapter-soft:#e0f0ec;--chapter-accent:#2f8b80">
+  <section class="module-hero" style="--chapter-ink:#336b64;--chapter-soft:#e7f0ec;--chapter-accent:#4f857d">
     <div class="module-hero-copy">
       <div class="eyebrow-row">
         <span class="chapter-pill">Materi 02 · Trigonometri</span>
@@ -128,19 +129,19 @@
           <svg viewBox="0 0 560 285" role="img" aria-labelledby="triTitle triDesc">
             <title id="triTitle">Segitiga siku-siku dan sisi-sisinya</title>
             <desc id="triDesc">Segitiga dengan sisi samping a, sisi depan b, sisi miring r, dan sudut theta di kiri bawah.</desc>
-            <rect width="560" height="285" fill="#fffdf6"/>
-            <path d="M76 228H356V65Z" fill="#e3ebf8" stroke="#1c2a2e" stroke-width="2"/>
-            <path d="M76 228h44v-19h-25v19" fill="none" stroke="#1c2a2e" stroke-width="1.2"/>
-            <path d="M99 228a28 28 0 0 0 25-12" fill="none" stroke="#d4553f" stroke-width="2"/>
-            <text x="109" y="215" font-family="'Fraunces',serif" font-size="16" font-style="italic" fill="#d4553f">θ</text>
-            <text x="210" y="251" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#24549b">a · samping</text>
-            <text x="369" y="153" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#d4553f">b · depan</text>
-            <text x="195" y="127" font-family="'IBM Plex Mono',monospace" font-size="10" fill="#6e7f3d" transform="rotate(-33 195 127)">r · miring</text>
-            <text x="418" y="88" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#24549b">sin θ = b/r</text>
-            <text x="418" y="120" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#24549b">cos θ = a/r</text>
-            <text x="418" y="152" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#24549b">tan θ = b/a</text>
-            <text x="76" y="46" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">SEGITIGA SIKU-SIKU</text>
-            <text x="76" y="270" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">r² = a² + b²</text>
+            <rect width="560" height="285" fill="#fffdf7"/>
+            <path d="M76 228H356V65Z" fill="#e8eef5" stroke="#2f3330" stroke-width="2"/>
+            <path d="M76 228h44v-19h-25v19" fill="none" stroke="#2f3330" stroke-width="1.2"/>
+            <path d="M99 228a28 28 0 0 0 25-12" fill="none" stroke="#a95741" stroke-width="2"/>
+            <text x="109" y="215" font-family="'Fraunces',serif" font-size="16" font-style="italic" fill="#a95741">θ</text>
+            <text x="210" y="251" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#3c5f8c">a · samping</text>
+            <text x="369" y="153" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#a95741">b · depan</text>
+            <text x="195" y="127" font-family="'Spline Sans Mono',monospace" font-size="10" fill="#68774f" transform="rotate(-33 195 127)">r · miring</text>
+            <text x="418" y="88" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#3c5f8c">sin θ = b/r</text>
+            <text x="418" y="120" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#3c5f8c">cos θ = a/r</text>
+            <text x="418" y="152" font-family="'Fraunces',serif" font-size="20" font-style="italic" fill="#3c5f8c">tan θ = b/a</text>
+            <text x="76" y="46" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">SEGITIGA SIKU-SIKU</text>
+            <text x="76" y="270" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">r² = a² + b²</text>
           </svg>
           <figcaption>Ingat posisi relatif terhadap sudut, bukan letak gambar. Sisi “depan” selalu berhadapan dengan sudut yang sedang dibaca.</figcaption>
         </figure>
@@ -248,36 +249,36 @@
           <svg viewBox="0 0 560 340" role="img" aria-labelledby="unitTitle unitDesc">
             <title id="unitTitle">Unit circle dan koordinat titik</title>
             <desc id="unitDesc">Lingkaran berjari-jari satu dengan titik P pada kuadran pertama. Koordinat P adalah cos theta dan sin theta. Sudut positif berlawanan arah jarum jam.</desc>
-            <rect width="560" height="340" fill="#fffdf6"/>
-            <g stroke="#24549b" stroke-width=".65" opacity=".25">
+            <rect width="560" height="340" fill="#fffdf7"/>
+            <g stroke="#3c5f8c" stroke-width=".65" opacity=".25">
               <path d="M40 60h480M40 110h480M40 160h480M40 210h480M40 260h480"/>
               <path d="M90 20v300M140 20v300M190 20v300M240 20v300M290 20v300M340 20v300M390 20v300M440 20v300M490 20v300"/>
             </g>
-            <circle cx="280" cy="170" r="118" fill="#e3ebf8" fill-opacity=".58" stroke="#1c2a2e" stroke-width="2"/>
-            <path d="M130 170h300M280 30v280" stroke="#1c2a2e" stroke-width="1.4"/>
-            <path d="M430 170l-8-3v6ZM280 30l-3 8h6Z" fill="#1c2a2e"/>
-            <text x="438" y="174" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#5c6b6c">x</text>
-            <text x="286" y="25" font-family="'IBM Plex Mono',monospace" font-size="9" fill="#5c6b6c">y</text>
+            <circle cx="280" cy="170" r="118" fill="#e8eef5" fill-opacity=".58" stroke="#2f3330" stroke-width="2"/>
+            <path d="M130 170h300M280 30v280" stroke="#2f3330" stroke-width="1.4"/>
+            <path d="M430 170l-8-3v6ZM280 30l-3 8h6Z" fill="#2f3330"/>
+            <text x="438" y="174" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#62685f">x</text>
+            <text x="286" y="25" font-family="'Spline Sans Mono',monospace" font-size="9" fill="#62685f">y</text>
 
-            <path d="M280 170L368 91" stroke="#d4553f" stroke-width="2.2"/>
-            <circle cx="368" cy="91" r="5" fill="#d4553f" stroke="#1c2a2e" stroke-width="1.2"/>
-            <path d="M368 91V170M368 91H280" stroke="#d4553f" stroke-width="1.1" stroke-dasharray="4 4"/>
-            <path d="M308 170A28 28 0 0 0 301 151" fill="none" stroke="#1c2a2e" stroke-width="1.4"/>
-            <text x="318" y="162" font-family="'Fraunces',serif" font-size="15" font-style="italic" fill="#1c2a2e">θ</text>
-            <text x="378" y="100" font-family="'Fraunces',serif" font-size="15" font-style="italic" fill="#1c2a2e">P(cos θ, sin θ)</text>
-            <text x="356" y="146" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#d4553f">sin θ</text>
-            <text x="300" y="106" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#d4553f">cos θ</text>
-            <text x="286" y="88" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#24549b">1</text>
+            <path d="M280 170L368 91" stroke="#a95741" stroke-width="2.2"/>
+            <circle cx="368" cy="91" r="5" fill="#a95741" stroke="#2f3330" stroke-width="1.2"/>
+            <path d="M368 91V170M368 91H280" stroke="#a95741" stroke-width="1.1" stroke-dasharray="4 4"/>
+            <path d="M308 170A28 28 0 0 0 301 151" fill="none" stroke="#2f3330" stroke-width="1.4"/>
+            <text x="318" y="162" font-family="'Fraunces',serif" font-size="15" font-style="italic" fill="#2f3330">θ</text>
+            <text x="378" y="100" font-family="'Fraunces',serif" font-size="15" font-style="italic" fill="#2f3330">P(cos θ, sin θ)</text>
+            <text x="356" y="146" text-anchor="end" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#a95741">sin θ</text>
+            <text x="300" y="106" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#a95741">cos θ</text>
+            <text x="286" y="88" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#3c5f8c">1</text>
 
-            <text x="184" y="75" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">KUADRAN II</text>
-            <text x="348" y="75" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">KUADRAN I</text>
-            <text x="184" y="275" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">KUADRAN III</text>
-            <text x="348" y="275" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#8b9797">KUADRAN IV</text>
+            <text x="184" y="75" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">KUADRAN II</text>
+            <text x="348" y="75" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">KUADRAN I</text>
+            <text x="184" y="275" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">KUADRAN III</text>
+            <text x="348" y="275" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#7d8379">KUADRAN IV</text>
 
-            <path d="M410 205A135 135 0 0 0 410 139" fill="none" stroke="#6e7f3d" stroke-width="1.6"/>
-            <path d="M410 129l-6 12h12Z" fill="#6e7f3d"/>
-            <text x="420" y="150" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#6e7f3d">arah positif</text>
-            <text x="420" y="162" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#6e7f3d">berlawanan jarum jam</text>
+            <path d="M410 205A135 135 0 0 0 410 139" fill="none" stroke="#68774f" stroke-width="1.6"/>
+            <path d="M410 129l-6 12h12Z" fill="#68774f"/>
+            <text x="420" y="150" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#68774f">arah positif</text>
+            <text x="420" y="162" font-family="'Spline Sans Mono',monospace" font-size="8" fill="#68774f">berlawanan jarum jam</text>
           </svg>
           <figcaption>$P$ berada pada lingkaran berjari-jari 1, sehingga $\cos^2\theta+\sin^2\theta=1$—identitas Pythagoras versi unit circle.</figcaption>
         </figure>
